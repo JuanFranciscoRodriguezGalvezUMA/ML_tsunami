@@ -10,12 +10,12 @@ If we do:
 
 weights_matrix = ann.get_weights()
 
-When we print(weights_matrix[0]) what it will return is a (9,200) array with the weights to get the values for the first layer (if we do not
+When we print(weights_matrix[0]) what it will return is a (9,100) array with the weights to get the values for the first layer (if we do not
 count the input as a layer)
 
-If we continue, print(weights_matrix[1]), in this case, it will be an (200,) array. It returns the bias for the first layer.
+If we continue, print(weights_matrix[1]), in this case, it will be an (100,) array. It returns the bias for the first layer.
 
-print(weights_matrix[2]) will be a (200,200). They are the weights to get the values for the second layer.
+print(weights_matrix[2]) will be a (100,100). They are the weights to get the values for the second layer.
 
 And continues. If we set i as an odd value in the weights_matrix[i], it will return the bias, if it is even, it will return the weights.
 '''
